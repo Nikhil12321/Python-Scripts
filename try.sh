@@ -1,5 +1,10 @@
 #!/usr/bin/expect
+
+set commit_name [lindex $argv 0]
 spawn "./git.sh"
+
+expect "enter commit name"
+send "$commit_name\r"
 
 expect "Username*"
 send "nikhil12321\r"
