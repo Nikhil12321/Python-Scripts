@@ -1,5 +1,6 @@
 #!/usr/bin/expect
 
+#try pushing
 set commit_name [lindex $argv 0]
 spawn "./git.sh"
 
